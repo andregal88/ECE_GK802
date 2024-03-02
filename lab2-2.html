@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="el">
+
+<head>
+    <meta charset="utf-8">
+    <title>lab2-2</title>
+</head>
+
+<body>
+    <h1>Αίτηση έκδοσης Πιστοποιητικού</h1>
+
+    <fieldset>
+        <legend>Στοιχεία φοιτητή</legend>
+        <label style="font-style: italic;">Συμπληρώστε τα στοιχεία σας με ελληνικούς χαρακτήρες <br><br> </label>
+        <div>
+            <label for="name"> Ονοματεπώνυμο<br> </label>
+            <input type="text" id="fName" name="first_name" placeholder="Όνομα">
+            <input type="text" id="lName" name="last_name" placeholder="Επώνυμο">
+        </div>
+        <div>
+            <label for="text"><br>Στοιχεία διεύθυνσης</label>
+        </div>
+        <div>
+            <input type="text" id="address" name="address" placeholder="Οδός και αριθμός">
+        </div>
+        <div>
+            <br>
+            <input type="text" id="city" name="city" placeholder="Πόλη">
+            <input type="text" id="TK" name="TK" placeholder="Ταχυδρομικός Κώδικας">
+
+        </div>
+
+        <div>
+            <label for="text"><br>Στοιχεία επικοινωνίας</label>
+        </div>
+        <div>
+            <input type="text" id="telephone" name="tel" placeholder="Τηλέφωνο">
+            <input type="text" id="mail" name="mail" placeholder="Διεύθυνση μέιλ">
+            <br>
+
+        </div>
+        <div>
+            <form>
+                <br>
+                <label for="text"> Έτος σπουδών </label>
+                <input type="radio" name="year" value="A"> Α
+                <input type="radio" name="year" value="Β"> Β
+                <input type="radio" name="year" value="Γ"> Γ
+                <input type="radio" name="year" value="Δ"> Δ
+                <input type="radio" name="year" value="Ε"> Ε
+                
+            </form>
+        </div>
+        <div>
+            <br>
+            <label for="text"> Αριθμός μητρώου <br> </label>
+            <input type="number" name="AM" placeholder="1050505">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Επιλέξτε πιστοποιητικό και τρόπο παραλαβής <br></legend>
+        <form action="" method="get">
+            Είδος Πιστοποιητικού <br>
+            <select name="type_of_certificate">
+                <option value="photocopy">Φωτοτυπία καρτέλας</option>
+            </select>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Παραλαβή πιστοποιητικού</legend>
+        <input type="radio" name="recieving_of_certificate" value="secretaty_recieve">Παραλαβή από τη γραμματεία <br>
+        <input type="radio" name="recieving_of_certificate" value="home_recieve">Αποστολή στη διεύθυνση οικείας <br>
+        <label for="text"><br>Ημερομηνία παραλαβής<br></label>
+        <input type="date" id="recieving_date" name="recieving_date">
+    </fieldset>
+    <div>
+        <br>
+        <input type="submit" value="Υποβολή">
+    </div>
+</body>
+
+</html>
